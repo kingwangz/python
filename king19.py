@@ -77,7 +77,7 @@ for line in wen:
    # print(s[0:6])
     if  s[0:6]==h:
        print (line)
-         while h == 0:
+       while h == 0:
            try:
                e = input()
                n = eval(e)
