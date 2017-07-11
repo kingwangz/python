@@ -1,4 +1,4 @@
-'''import jieba
+import jieba
 word='djkkkkks'
 cou={}
 for words in word:
@@ -24,7 +24,7 @@ for i in range(4):
         print(i)
     print(i)
 print(i)
-
+'''
 import random
 for i in range(10):
     a = random.randint(0, 100)
@@ -65,7 +65,8 @@ print(o)
 j=0
 for i in range(10):
     j=j+5
-print(j)'''
+print(j)
+
 r="ss2222"
 h=list(r)
 print(h)
@@ -75,7 +76,7 @@ for line in wen:
    # print(s[0:6])
     if  s[0:6]==h:
        print (line)
-       '''  while h == 0:
+         while h == 0:
            try:
                e = input()
                n = eval(e)
