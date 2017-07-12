@@ -24,6 +24,7 @@ for i in range(4):
         print(i)
     print(i)
 print(i)
+print(i)
 '''
 import random
 for i in range(10):
