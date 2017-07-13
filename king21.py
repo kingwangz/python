@@ -2,7 +2,7 @@ class FooClass(object):
     """my very first class: FooClass"""
     version = 0.1
 
-    def __init__(self, nm='John Doe'):
+    def __init__(self, nm='king'):
         """constructor"""
         self.name = nm
 
@@ -19,3 +19,5 @@ class FooClass(object):
         return x + x
 foo1 = FooClass()
 foo1.showver()
+i=['f']
+print(type(i))
