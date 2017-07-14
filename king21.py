@@ -21,7 +21,11 @@ foo1 = FooClass()
 foo1.showver()
 i=['f']
 print(type(i))'''
+
+
 def tex():
-  print ("we are in %s" %__name__)
+    print("we are in %s".format(__name__))
+
+
 if __name__ == '__main__':
-  tex()
+    tex()
