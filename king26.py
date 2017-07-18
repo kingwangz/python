@@ -1,0 +1,7 @@
+fdict = dict((['x', 1], ['y', 2]))
+print(fdict)
+ddict = {}.fromkeys(('x', 'y'), (-1, -2))
+print(ddict)
+print(ddict.keys())
+print('y' in ddict.keys())
+print(hash('x'))
