@@ -16,5 +16,4 @@ elif len(inp) > 1:
             if otherChar not in alphas + nums:
                 print('invalid: remaining symbols must be alphanumeric')
                 break
-        else:
-            print("okay as an identifier")
+        print("okay as an identifier")
