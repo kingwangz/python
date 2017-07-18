@@ -38,5 +38,16 @@ print(person)
 hubby[0] = 'joe'
 wifey[0] = 'jane'
 print(hubby, wifey)
-hubby[1] = 50.00
+hubby[1][1] = 50.00
+print(hubby, wifey)
+person = ['name', ['savings', 100.00]]
+hubby = person[:]
+import copy
+wifey = copy.deepcopy(person)
+print(person)
+# wifey = list(person)
+hubby[0] = 'joe'
+wifey[0] = 'jane'
+print(hubby, wifey)
+hubby[1][1] = 50.00
 print(hubby, wifey)
