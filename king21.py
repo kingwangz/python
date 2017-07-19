@@ -24,8 +24,9 @@ print(type(i))'''
 
 
 def tex():
-    print("we are in %s".format(__name__))
+    print("we are in {}".format(__name__))
 
 
+print("one.py is being imported into another module")
 if __name__ == '__main__':
     tex()
