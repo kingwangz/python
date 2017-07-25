@@ -31,5 +31,4 @@ class addrBookEntry(object):
         print('Updated phone# for:', self.name)
 
 
-addrBookEntry('John ', '408-555-1212')
-addrBookEntry('Jane ', '650-555-1212')
+addrBookEntry('John Doe', '408-555-1212')
