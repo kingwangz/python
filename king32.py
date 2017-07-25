@@ -28,9 +28,23 @@ class addrBookEntry(object):
 
     def updatePhone(self, newph):
         self.phone = newph
-        print('Updated phone# for:', self.name)
+        print('Updated phone for:', self.phone)
 
 
 john = addrBookEntry('John Doe', '408-555-1212')
 john.updatePhone('2')
 print(john.phone)
+
+
+class EmplAddrBookEntry(addrBookEntry):
+    def __init__(self, nm, ph, id, em):
+        addrBookEntry.__init__(self, nm, ph)
+        self.empid = id
+        self.email = em
+
+    def updateEmail(self, newem):
+        self.email = newem
+        print('Updated e-mail address for:', self.name)
+
+
+john = EmplAddrBookEntry('John Doe', '408-555-121', 42, 'john@spam.doe')
