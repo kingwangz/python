@@ -36,7 +36,7 @@ john.updatePhone('2')
 print(john.phone)
 
 
-class EmplAddrBookEntry(addrBookEntry):
+class emplAddrBookEntry(addrBookEntry):
     def __init__(self, nm, ph, id, em):
         addrBookEntry.__init__(self, nm, ph)
         self.empid = id
@@ -47,4 +47,10 @@ class EmplAddrBookEntry(addrBookEntry):
         print('Updated e-mail address for:', self.name)
 
 
-john = EmplAddrBookEntry('John Doe', '408-555-121', 42, 'john@spam.doe')
+john = emplAddrBookEntry('John Doe', '408-555-121', 42, 'john@spam.doe')
+print(dir(emplAddrBookEntry))
+print(emplAddrBookEntry.__dict__)
+print(emplAddrBookEntry.__bases__)
+print(emplAddrBookEntry.__class__)
+print(emplAddrBookEntry.__doc__)
+print(emplAddrBookEntry.__name__)
