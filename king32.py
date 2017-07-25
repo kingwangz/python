@@ -31,4 +31,6 @@ class addrBookEntry(object):
         print('Updated phone# for:', self.name)
 
 
-addrBookEntry('John Doe', '408-555-1212')
+john = addrBookEntry('John Doe', '408-555-1212')
+john.updatePhone('2')
+print(john.phone)
