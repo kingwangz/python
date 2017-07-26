@@ -29,6 +29,17 @@ class A(object):
         cls().foo()
 
 
+class P(object):
+    def __init__(self):
+        print("calling P's constructor")
+
+
+class C(P):
+    def __init__(self):
+        super(C, self).__init__()
+        print("calling C's constructor")
+
+c = C()
 A.static_foo()
 A.class_foo()
 TestStaticMethod.foo()
