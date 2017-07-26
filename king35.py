@@ -19,3 +19,6 @@ class C2(P1, P2):
 
 class GC(C1, C2):
     pass
+
+
+P2.bar(1)
