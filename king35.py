@@ -1,8 +1,8 @@
-class P1:
+class P1(object):
     print('called P1-foo()')
 
 
-class P2:
+class P2(object):
     print('called P2-foo()')
 
     def bar(self):
