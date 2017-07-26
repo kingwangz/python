@@ -31,3 +31,5 @@ class A(object):
 
 A.static_foo()
 A.class_foo()
+TestStaticMethod.foo()
+TestClassMethod.foo()
