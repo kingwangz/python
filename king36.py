@@ -19,7 +19,6 @@ class Time60(object):
 
 mon = Time60(10, 30)
 tue = Time60(11, 15)
-
 print(mon, tue)
 print(mon + tue)
 mon += tue
