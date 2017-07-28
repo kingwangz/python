@@ -1,20 +1,37 @@
-class AnyIter(object):
-    def __init__(self, data, safe=False):
-        self.safe = safe
-        self.iter = iter(data)
+from time import time, ctime
 
-    def __iter__(self):
-        return self
 
-    def next(self, howmany=1):
-        retval = []
-        for eachItem in range(howmany):
-            try:
-                retval.append(self.iter.next())
-            except StopIteration:
-                if self.safe:
-                    break
+class TimedWrapMe(object):
+    def __init__(self, obj):
+        self.__data = obj
+        self.__ctime = self.__mtime = self.__atime = time()
 
-                else:
-                    raise
-        return retval
+    def get(self):
+        self.__atime = time()
+        return self.__data
+
+    def gettimeval(self, t_type):
+        if not isinstance(t_type, str) or t_type[0] not in 'cma':
+            raise TypeError
+        return getattr(self, '_%s__%stime' % (self.__class__.__name__, t_type[0]))
+
+    def gettimestr(self, t_type):
+        return ctime(self.gettimeval(t_type))
+
+    def set(self, obj):
+        self.__data = obj
+
+        self.__mtime = self.__atime = time()
+
+    def __repr__(self):
+        self.__atime = time()
+
+        return self.__data
+
+    def __str__(self):
+        self.__atime = time()
+
+        return str(self.__data)
+
+    def __getattr__(self, attr):
+        self.__atime = time()
