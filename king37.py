@@ -35,3 +35,7 @@ class TimedWrapMe(object):
 
     def __getattr__(self, attr):
         self.__atime = time()
+
+
+timeWrappedObj = TimedWrapMe(932)
+print(timeWrappedObj.gettimestr('c'))
