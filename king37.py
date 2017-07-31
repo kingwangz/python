@@ -39,3 +39,4 @@ class TimedWrapMe(object):
 
 timeWrappedObj = TimedWrapMe(932)
 print(timeWrappedObj.gettimestr('c'))
+print(timeWrappedObj)
