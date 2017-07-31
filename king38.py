@@ -13,3 +13,8 @@ class WrapMe(object):
 
     def __getattr__(self, attr):
         return getattr(self.__data, attr)
+
+
+wrappedComplex = WrapMe(3.5 + 4.2j)
+print(wrappedComplex)
+print(wrappedComplex.real)
